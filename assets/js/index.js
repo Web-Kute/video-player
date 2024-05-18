@@ -32,9 +32,7 @@ window.addEventListener('keydown', function (event) {
 });
 
 video.addEventListener('ended', (event) => {
-  console.log(
-    'Video stopped either because it has finished playing or no further data is available.',
-  );
+  playBtn.innerHTML = '<i class="fa fa-play fa-2x"></i>';
 });
 
 function stopVideo() {
